@@ -23,10 +23,10 @@
     font-size: 12;
 }
 
-#contacts-list tr:nth-child(even) {
+#contacts-list tr:nth-child(odd) {
   background-color: #1a1a1a;
 }
-#contacts-list tr:nth-child(odd) {
+#contacts-list tr:nth-child(even) {
   background-color: #212121;
 }
 
@@ -35,6 +35,7 @@ table{
     border-bottom: 2px solid #121212;
     border-collapse: collapse;
     width: 275px;
+    table-layout: fxed;
 }
 
 td {
@@ -42,13 +43,11 @@ td {
     border-bottom: 2px solid #121212;
 }
 
-
 .active {
     border-radius: 4px;
     height: 8px;
     width: 8px;
     background-color: #00ff1e;
-
 }
 
 .busy {
@@ -65,15 +64,19 @@ td {
     background-color: #fe0009;
 }
 
-td:nth-child(2) { /* status icon */
+td:nth-child(2), th:nth-child(2) { /* status icon */
     padding-left: 18px;
     padding-right: 18px;
     width: 8px;
 }
 
-td:nth-child(3) { /* name */
+td:nth-child(3), th:nth-child(3) { /* name */
     border-right: 1px solid #121212;
-    width: 82;
+    width: 67px;
+}
+
+td:nth-child(4), td:nth-child(5), th:nth-child(4), th:nth-child(5)  { /* phone/email */
+    width: 144px;
 }
 
 tr {
@@ -86,14 +89,12 @@ tr {
     display: table-cell;
     color: #666666;
     padding-left: 16px;
-    width: 165px;
 }
 
 .phone {
     display: none;
     color: #666666;
     padding-left: 16px;
-    width: 165px;
 }
 
 .full-info {
@@ -115,11 +116,10 @@ tr {
     display: none;
     position: absolute;
     z-index: 1000;
-    height: 35px;
+    height: 33px;
     width: 273px;
     background-color: rgba(24,24,24,.8);    
-    border-top: 0px solid #121212;
-    border-bottom: 0px solid #121212;
+    border: 0px solid #121212;
 }
 
 .footer {
