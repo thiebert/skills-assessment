@@ -1,0 +1,133 @@
+.widget {
+    background-color: #252525;
+    font-family: 'Segoe UI';
+    border-radius:12px;
+    width: 275px;
+}
+
+.header {
+    border-radius:12px;
+    color: white;
+    padding: 0px 18px;
+    font-weight: 600;
+    height: 50px;
+    line-height: 50px;
+    background: -moz-linear-gradient(top, #3e3e3e 0%, transparent 100% ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #3e3e3e 0%, transparent 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #3e3e3e 0%, transparent 100%); /*W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+#contacts-list {
+    padding: 0px 18px;
+    color: white;
+    font-size: 12;
+}
+
+#contacts-list tr:nth-child(even) {
+  background-color: #1a1a1a;
+}
+#contacts-list tr:nth-child(odd) {
+  background-color: #212121;
+}
+
+table{
+    border-top: 2px solid #121212;
+    border-bottom: 2px solid #121212;
+    border-collapse: collapse;
+    width: 275px;
+}
+
+td {
+    border-top: 2px solid #121212;
+    border-bottom: 2px solid #121212;
+}
+
+
+.active {
+    border-radius: 4px;
+    height: 8px;
+    width: 8px;
+    background-color: #00ff1e;
+
+}
+
+.busy {
+    border-radius: 4px;
+    height: 8px;
+    width: 8px;
+    background-color: #fffa01;
+}
+
+.offline {
+    border-radius: 4px;
+    height: 8px;
+    width: 8px;
+    background-color: #fe0009;
+}
+
+td:nth-child(2) { /* status icon */
+    padding-left: 18px;
+    padding-right: 18px;
+    width: 8px;
+}
+
+td:nth-child(3) { /* name */
+    border-right: 1px solid #121212;
+    width: 82;
+}
+
+tr {
+    padding: 0px 18px;
+    height: 35px;
+    width: 275px;
+}
+
+.email {
+    display: table-cell;
+    color: #666666;
+    padding-left: 16px;
+    width: 165px;
+}
+
+.phone {
+    display: none;
+    color: #666666;
+    padding-left: 16px;
+    width: 165px;
+}
+
+.full-info {
+    display: none;
+    position: absolute;
+    padding-left: 16px;
+    width: 144px;
+    background-color: #444444;
+    border-top: 0px solid #121212;
+    border-bottom: 0px solid #121212;
+    z-index: 1001;
+}
+
+.full-info a {
+    color: #08e7e2;
+}
+
+.blackout {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    height: 35px;
+    width: 273px;
+    background-color: rgba(24,24,24,.8);    
+    border-top: 0px solid #121212;
+    border-bottom: 0px solid #121212;
+}
+
+.footer {
+    padding:14px 16px;
+    height:16px;
+    box-shadow: 0 -5px 5px -3px #000;
+}
+
+#contact-info-select {
+    float: right;
+}

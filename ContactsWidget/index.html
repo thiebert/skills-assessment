@@ -1,0 +1,160 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <script type="text/javascript" src="widget.js"> </script>
+</head>
+
+<body>
+    <div class="widget">
+        <div class="header">
+            Contacts
+        </div>
+        <table id="contacts-list">
+            <tr class="row">
+                <td class="blackout"></td>
+                <td>
+                    <div class="active" />
+                </td>
+                <td>Christian</td>
+                <td class="email">christian@yahoo.com</td>
+                <td class="phone">323-555-1234</td>
+                <td class="full-info">
+                    <p>
+                        <a href="mailto:rich@tripod.com">rich@tripod.com</a>
+                    </p>
+                    <p>323-555-1234</p>
+                    <p>6539 Wilton Ave. Culver City CA 90234</p>
+                </td>
+            </tr>
+            <tr class="row">
+                <td class="blackout"> </td>
+                <td>
+                    <div class="active" />
+                </td>
+                <td>Rich</td>
+                <td class="email">rich@tripod.com</td>
+                <td class="phone">323-555-1234</td>
+                <td class="full-info">
+                    <p>
+                        <a href="mailto:rich@tripod.com">rich@tripod.com</a>
+                    </p>
+                    <p>323-555-1234</p>
+                    <p>6539 Wilton Ave. Culver City CA 90234</p>
+                </td>
+            </tr>
+            <tr class="row">
+                <td class="blackout"></td>
+                <td>
+                    <div class="active" />
+                </td>
+                <td>Scott</td>
+                <td class="email">scott@mailinator.com</td>
+                <td class="phone">323-555-1234</td>
+                <td class="full-info">
+                    <p>
+                        <a href="mailto:rich@tripod.com">rich@tripod.com</a>
+                    </p>
+                    <p>323-555-1234</p>
+                    <p>6539 Wilton Ave. Culver City CA 90234</p>
+                </td>
+            </tr>
+            <tr class="row">
+                <td class="blackout"></td>
+                <td>
+                    <div class="active" />
+                </td>
+                <td>Danny</td>
+                <td class="email">christian@yahoo.com</td>
+                <td class="phone">323-555-1234</td>
+                <td class="full-info">
+                    <p>
+                        <a href="mailto:rich@tripod.com">rich@tripod.com</a>
+                    </p>
+                    <p>323-555-1234</p>
+                    <p>6539 Wilton Ave. Culver City CA 90234</p>
+                </td>
+            </tr>
+            <tr class="row">
+                <td class="blackout"></td>
+                <td>
+                    <div class="offline" />
+                </td>
+                <td>Taka</td>
+                <td class="email">taka@myspace.com</td>
+                <td class="phone">323-555-1234</td>
+                <td class="full-info">
+                    <p>
+                        <a href="mailto:rich@tripod.com">rich@tripod.com</a>
+                    </p>
+                    <p>323-555-1234</p>
+                    <p>6539 Wilton Ave. Culver City CA 90234</p>
+                </td>
+            </tr>
+            <tr class="row">
+                <td class="blackout"></td>
+                <td>
+                    <div class="busy" />
+                </td>
+                <td>Tim</td>
+                <td class="email">tim@netscape.com</td>
+                <td class="phone">323-555-1234</td>
+                <td class="full-info">
+                    <p>
+                        <a href="mailto:rich@tripod.com">rich@tripod.com</a>
+                    </p>
+                    <p>323-555-1234</p>
+                    <p>6539 Wilton Ave. Culver City CA 90234</p>
+                </td>
+            </tr>
+            <tr class="row">
+                <td class="blackout"></td>
+                <td>
+                    <div class="active" />
+                </td>
+                <td>Patrick</td>
+                <td class="email">patrick@live.com</td>
+                <td class="phone">323-555-1234</td>
+                <td class="full-info">
+                    <p>
+                        <a href="mailto:rich@tripod.com">rich@tripod.com</a>
+                    </p>
+                    <p>323-555-1234</p>
+                    <p>6539 Wilton Ave. Culver City CA 90234</p>
+                </td>
+            </tr>
+            <tr class="row">
+                <td class="blackout"></td>
+                <td>
+                    <div class="busy" />
+                </td>
+                <td>Jacques</td>
+                <td class="email">jacques@aol.com</td>
+                <td class="phone">323-555-1234</td>
+                <td class="full-info">
+                    <p>
+                        <a href="mailto:rich@tripod.com">rich@tripod.com</a>
+                    </p>
+                    <p>323-555-1234</p>
+                    <p>6539 Wilton Ave. Culver City CA 90234</p>
+                </td>
+            </tr>
+        </table>
+        <div class="footer">
+            <select name="contact-info" id="contact-info-select" onchange="setInfo()">
+                <option value="email">Email Address</option>
+                <option value="phone">Phone Number</option>
+            </select>
+        </div>
+    </div>
+    <script>    
+        const g = document.getElementsByClassName('row');
+        for (let i = 0; i < g.length; i++) {
+            g[i].onclick = function () {
+                toggleHighlight(i);
+            }
+        }
+    </script>
+</body>
+
+</html>
